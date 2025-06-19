@@ -2,6 +2,8 @@
 
 This is my personal portfolio site showcasing a few of the projects I've worked on in data science and data engineering.
 
+You can visit the site at https://jarettownsend.github.io
+
 > ⚠️ I’m not a frontend developer, and this site is not meant to be a design showcase. I used a great free HTML template to make my work more accessible and visually organized.
 
 Credits:
