@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Movie Matcher</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="title">Jaret Townsend</a>
+        <nav>
+            <ul>
+                <li><a href="index.html#one">Projects</a></li>
+                <li><a href="https://github.com/jarettownsend/MovieMeld" target="_blank">GitHub Repo</a></li>
+                <li><a href="https://www.linkedin.com/in/jaret-townsend/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <section id="main" class="wrapper">
+            <div class="inner">
+                <h1 class="major">Movie Matcher</h1>
+
+                <h2>📘 Project Overview</h2>
+                <p>A fun and simple web app built with Streamlit that helps two users discover movies they’re both
+                    likely to enjoy. Based on shared preferences like genre, runtime, reviews, and release era, the app
+                    returns a short list of movie suggestions—complete with posters, overviews, and key details.
+                </p>
+                <p>Behind the scenes, the recommendation engine uses a custom rule-based algorithm built on heuristic
+                    scoring. Instead of machine learning, it relies on logic-driven weights: each film earns points
+                    based on how well it matches the users' shared preferences—such as overlapping genres, preferred
+                    runtimes, minimum review scores, and release categories. To keep suggestions dynamic and avoid
+                    repetition, the app randomly selects 3 movies from the top 5 highest-scoring titles.</p>
+                <p><strong>Data source:</strong> <a
+                        href="https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows"
+                        target="_blank">IMDb topp 1000 Movies</a></p>
+                <p><strong>Try it live on </strong> <a href="https://moviemeld.streamlit.app/" target="_blank">Streamlit
+                        Cloud</a></p>
+                <h3>Tech Stack</h3>
+                <ul>
+                    <li><strong>Python</strong></li>
+                    <li><strong>Pandas</strong> – for cleaning and manipulating data</li>
+                    <li><strong>Streamlit</strong> – for deploying the web interface</li>
+                </ul>
+
+                <h2>🚀 Potential Improvements</h2>
+                <ul>
+                    <li><strong>Expanded Dataset:</strong> Currently, MovieMeld uses a static CSV of the top 1,000 IMDb
+                        titles. While it's a high-quality dataset, it can lack diversity—particularly for niche
+                        preferences (e.g., short biographical films)—which may result in weaker recommendations.</li>
+                    <li><strong>Richer Preferences:</strong> Adding more filters such as age-appropriateness,
+                        language, or tone (e.g., dark, lighthearted, romantic) could improve the recommendation quality
+                        even further..</li>
+                </ul>
+                <section>
+                    <div style="text-align: center;">
+                        <h2>Dashboard Preview</h2>
+                        <img src="images/moviematch.jpg" alt="Movie Matcher Dashboard Preview"
+                            style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer id="footer" class="wrapper alt">
+            <div class="inner">
+                <ul class="menu">
+                    <li>&copy; Jaret Townsend</li>
+                    <li><a href="https://github.com/jarettownsend/MovieMeld" target="_blank">GitHub Repo</a></li>
+                    <li><a href="https://www.linkedin.com/in/jaret-townsend/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
